@@ -52,8 +52,8 @@ function sendEmail(){
     Email.send({
 
         Host : "smtp.google.com",
-        Username : "tusharbirlasoft@gmail.com",
-        Password : "Ju$T4Me!1047",
+        Username : "Dummy Email",
+        Password : "Dummy Password",
         To : "tushar.j.kukreja@gmail.com",
         From : document.getElementById("email").value,
         Subject : "New Message From Recruiter",
