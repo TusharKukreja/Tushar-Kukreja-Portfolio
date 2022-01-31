@@ -33,6 +33,21 @@ document.querySelectorAll("a").forEach((links) => {
   };
 });
 
+// Preventing User from Right Clicking 
+
+window.addEventListener('contextmenu', function (e) { 
+  e.preventDefault(); 
+}, false);
+
+// Preventing User to use shortcut keys
+
+document.addEventListener("keydown", function(e){
+  if(e.ctrlKey || e.keycode==123){
+    e.stopPropagation();
+    e.preventDefault();
+  }
+});
+
 function sendEmail(){
     Email.send({
 
