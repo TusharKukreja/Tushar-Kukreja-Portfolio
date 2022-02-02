@@ -112,7 +112,7 @@ header .follow a:hover {
 
 #menu-bars {
   position: fixed;
-  top: 1rem;
+  top: 0rem;
   right: 2rem;
   z-index: 10000;
   background: var(--main-color);
@@ -603,10 +603,12 @@ header .follow a:hover {
   color: var(--main-color);
 }
 
+
+
 /* media queries  */
-@media (max-width: 991px) {
+@media (max-width: 991px){
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   body {
@@ -635,15 +637,15 @@ header .follow a:hover {
     width: 70%;
     display: flex;
     float: right;
-    transform: translateY(-48%);
+    transform: translateY(-46%);
     margin-bottom: -20rem;
-    margin-right: -113px;
+    margin-right: -95px;
   }
 }
 
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 
   header {
@@ -655,22 +657,34 @@ header .follow a:hover {
   }
 
   .home .image img {
-    width: 85%;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     float: right;
     transform: translateY(-16%);
-    margin-bottom: 317px;
+    margin-bottom: -38px;
     margin-right: -9rem;
   }
 }
 
 @media (max-width: 1280px) and (min-width: 990px) {
   .home .image img {
-    width: 70%;
+    width: 65%;
     display: flex;
     float: right;
     transform: translateY(-36%);
-    margin-bottom: 317px;
-    margin-right: -60px;
+    margin-bottom: -13rem;
+    margin-right: -15rem;
   }
+}
+
+@media (min-width: 820px) and (max-width: 1000px){
+    .home .image img {
+        width: 80%;
+        display: flex;
+        float: right;
+        transform: translateY(-10%);
+        margin-bottom: -13rem;
+        margin-right: -5rem;
+      }
 }
